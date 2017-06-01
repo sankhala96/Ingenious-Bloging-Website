@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Blog/Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="css/LoginStyle.css" />
+
+        
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="js/RegisterValidation.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="Images/UserImage2.png" />
+            <form action="RegisterServlet" method="post">
+                <div class="form-input">
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required/>
+                    <span id="username_error" class="val_error"></span>
+                </div>
+
+                <div class="form-input">
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required />
+                    <span id="email_error" class="val_error"></span>
+                </div>
+
+                <div class="form-input">
+                    <input type="number" id="contact" name="contactno" placeholder="Enter Contact No." required/>
+                    <span id="contact_error" class="val_error"></span>
+                </div>
+
+                <div class="form-input">
+                        <input type="password" id="password" name="password" placeholder="Enter Password" required/>
+                    <span id="password_error" class="val_error"></span>
+                </div>
+                <input type="submit" value="REGISTER" class="btn-login" /><br />
+                <a href="login.html">SignIn</a> 
+            </form>
+        </div>
+    </body>
+</html>

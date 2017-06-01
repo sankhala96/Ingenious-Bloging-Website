@@ -1,0 +1,81 @@
+.body{
+	margin:0;
+	padding:0;
+	background-color:#fff;
+}
+
+.navbar{
+	width:100%;
+	min-height:80px;
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+}
+.navbar .navbar-header .navbar-brand{
+	color:#000;
+	font-size:30px;
+	padding-top:0px;
+	padding-left:80px;
+	padding-right:30px;
+	height:80px;
+	line-height:80px;
+}
+.navbar .navbar-collapse{
+	text-align:center;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+
+@media(min-width: 768px){
+.navbar-nav li a {
+	/* (80px - line-height of 27px) / 2 = 26.5px */
+    line-height: 27px;
+    padding-top: 26.5px;
+	padding-right:26.5px;
+	font-size:18px;
+}
+}
+
+/* Image main */
+.head-image{
+	width:100%;
+	max-height:500px;
+	margin:0 0;
+	padding:0 0;
+	padding-right:0;
+}
+/* Image main end */
+
+/*post*/
+
+.post{
+	padding:0 100px;
+        margin: 50px;
+}
+
+/*post end */
+
+/* footer */
+
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}

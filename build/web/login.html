@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/LoginStyle.css" />
+
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/LoginValidation.js"></script>
+<script>
+    var username=document.LoginForm.username.value;
+    window.localStorage.setItem('username',username);
+</script>
+</head>
+
+<body>
+<!-- login box -->
+<div class="container">
+    <img src="Images/UserImage2.png"  />
+    <form method="post" name="LoginForm" id="LoginForm" action="LoginServlet">
+    	<div class="form-input">
+        	<input type="text"  id="username" name="username" placeholder="Enter Username" required />
+                <span id="username_error" class="val_error"></span>
+        </div>
+        
+        <div class="form-input">
+        	<input type="password" id="password" name="password" placeholder="Enter Password" required />
+                <span id="password_error" class="val_error"></span>
+        </div>
+        <input type="submit" value="LOGIN" class="btn-login" /><br />
+        <a href="Register.html">Not a Member yet?</a> 
+    </form>
+</div>
+<!-- login box End -->
+
+
+</body>
+</html>
+
